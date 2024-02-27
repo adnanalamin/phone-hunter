@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Phone Hunter</title>
-</head>
-<body>
-    
+    <!-- ================= Link Tailwind CSS ================== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ======================== Link DaisyUI ==================== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+        <h1 class="uppercase font-mono font-extrabold text-6xl text-sky-700 text-center">Hunting Phone</h1>
+    </header>
+    <main>
+        <div class="md:w-10/12 w-11/12 mx-auto bg-gray-200 p-4 m-4">
+            <input id="search-field" type="text" placeholder="Search...." class="input w-full max-w-xs" />
+            <button onclick="handelSearch()" class="btn btn-accent">Search</button>
+        </div>
+        <section class="md:w-10/12 w-11/12 mx-auto">
+            <div id="phone-container" class="grid md:grid-cols-4 md:gap-5 grid-cols-1 gap-y-3">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
     <!-- ================= Link Script File ===================== -->
     <script src="./scripts//app.js"></script>
-</body>
+  </body>
 </html>
